@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ag-scl"
+version = "0.1.0"
+description = "Angular Gaussian Supervised Contrastive Learning for long-tailed ECG classification"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Jin Dai" },
+  { name = "Qiuzhen Zhang" },
+  { name = "Chenyun Dai" },
+  { name = "Danmei Lan" },
+  { name = "Can Han" },
+]
+dependencies = [
+  "torch>=2.0",
+  "PyYAML>=6.0",
+]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+[project.urls]
+Repository = "https://github.com/Open-EXG/AG-SCL-for-Long-Tailed-ECG"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ag_scl = ["py.typed"]
