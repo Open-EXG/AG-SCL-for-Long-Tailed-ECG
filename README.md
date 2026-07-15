@@ -18,9 +18,20 @@ learnable prior calibration.
 | :--------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
 | Applies stochastic ECG transformations only to records containing at least one positive label. | Models each label state with online full-covariance moments on the unit hypersphere. | Learns bounded label-wise prior scales shared by the classification and contrastive objectives. |
 
-This repository contains the core method, model, augmentations, configuration,
-tests, and synthetic examples. It excludes private datasets, dataset-specific loaders and model weights.
+This repository provides the public implementation of the AG-SCL method, model,
+augmentations, configuration, tests, and synthetic examples.
 
+## TODO
+
+Upon acceptance of the paper, we will release the complete resources required
+to reproduce the study.
+
+- [ ] Complete data preprocessing and data-loading pipelines
+- [ ] End-to-end training, experiment orchestration, and evaluation code
+- [ ] Full experiment configurations and pretrained model weights
+- [ ] Result-reproduction scripts and comprehensive documentation
+- [ ] Noc-ECG resources and access materials, subject to ethics approval and
+      applicable data-use agreements
 
 ## Quick Start
 
@@ -141,11 +152,6 @@ priors and participates in both objectives.
 <p align="center"><sub><b>Per-class performance on PTB-XL and Noc-ECG.</b> The top row reports positive-label prevalence; subsequent rows report sensitivity, specificity, average precision, and precision at 90% recall. Error bars show the standard deviation across five random seeds. Click the figure for the full-resolution version.</sub></p>
 
 These values document the experiments reported in the accompanying manuscript.
-Noc-ECG is a private cohort and is not distributed with this repository. The
-public package also excludes the complete data-loading, experiment orchestration,
-and evaluation pipeline; therefore, this figure should not be interpreted as a
-claim that the private-cohort results can be independently reproduced from this
-repository alone.
 
 ## Configuration
 
