@@ -1,5 +1,3 @@
-<div align="center">
-
 ## Overview
 
 AG-SCL addresses label imbalance in multi-label ECG recognition by combining
