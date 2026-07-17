@@ -187,7 +187,7 @@ If you find this repository useful, please cite our work
 @article{dai2026angular,
   title={Angular Gaussian Supervised Contrastive Learning for Long-Tailed Electrocardiogram Arrhythmia Diagnosis},
   author={Jin Dai, Qiuzhen Zhang, Chenyun Dai, Danmei Lan, Can Han},
-  journal={arXiv preprint arXiv:2604.13685},
+  journal={arXiv preprint arXiv:2607.14613},
   year={2026}
 }
 ```
