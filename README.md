@@ -23,18 +23,6 @@ learnable prior calibration.
 This repository provides the public implementation of the AG-SCL method, model,
 augmentations, configuration, tests, and synthetic examples.
 
-## TODO
-
-Upon acceptance of the paper, we will release the complete resources required
-to reproduce the study.
-
-- [ ] Complete data preprocessing and data-loading pipelines
-- [ ] End-to-end training, experiment orchestration, and evaluation code
-- [ ] Full experiment configurations and pretrained model weights
-- [ ] Result-reproduction scripts and comprehensive documentation
-- [ ] Noc-ECG resources and access materials, subject to ethics approval and
-      applicable data-use agreements
-
 ## Quick Start
 
 Python 3.10 or later and PyTorch 2.0 or later are required.
@@ -181,10 +169,25 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 CUDA device-consistency checks run automatically when CUDA is available.
 
+## TODO
+
+Upon acceptance of the paper, we will release the complete resources required
+to reproduce the study.
+
+- [ ] Complete data preprocessing and data-loading pipelines
+- [ ] End-to-end training, experiment orchestration, and evaluation code
+- [ ] Full experiment configurations and pretrained model weights
+- [ ] Result-reproduction scripts and comprehensive documentation
+- [ ] Noc-ECG resources and access materials, subject to ethics approval and
+      applicable data-use agreements
+
 ## Citation
-
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff). If you use
-AG-SCL in your work, please cite the accompanying manuscript and this software
-release.
-
-AG-SCL is released under the [MIT License](LICENSE).
+If you find this repository useful, please cite our work
+```
+@article{dai2026angular,
+  title={Angular Gaussian Supervised Contrastive Learning for Long-Tailed Electrocardiogram Arrhythmia Diagnosis},
+  author={Jin Dai, Qiuzhen Zhang, Chenyun Dai, Danmei Lan, Can Han},
+  journal={arXiv preprint arXiv:2604.13685},
+  year={2026}
+}
+```
