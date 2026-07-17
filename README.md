@@ -1,5 +1,7 @@
 <h1 align="center">Angular Gaussian Supervised Contrastive Learning for Long-Tailed Electrocardiogram Arrhythmia Diagnosis</h1>
 
+This is the official repository to the paper "[Angular Gaussian Supervised Contrastive Learning for Long-Tailed Electrocardiogram Arrhythmia Diagnosis](https://arxiv.org/abs/2607.14613)".
+
 ## Overview
 
 AG-SCL addresses label imbalance in multi-label ECG recognition by combining
